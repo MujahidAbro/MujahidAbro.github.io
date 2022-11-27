@@ -16,7 +16,7 @@
     <title>Direct Flight</title>
 </head>
 <body class="bg-theme-light">
-<?php $page = $_SERVER['REQUEST_URI'];?>
+
 <header class="px-20 sticky-top w-100 z-index-3 bg-white">
     <div class="d-flex align-items-center justify-content-between">
         <!-- logo -->
@@ -28,7 +28,7 @@
         <!-- center menu bar -->
         <div class="d-flex align-items-center justify-content-center top-center-bar">
             <div class="ul-nav">
-                <a href="index.php" class="text-decoration-none fw-semibold px-20 py-20 d-block border-white-1 <?php echo (str_contains($page,'index.php'))? 'active':'' ;?>">
+                <a href="index.html" class="text-decoration-none fw-semibold px-20 py-20 d-block border-white-1">
                     <div class="d-flex align-items-center">
                         
                         <img src="assets/images/visa.svg" width="24px" alt="direct" />
@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="ul-nav">
-                <a href="course.php" class="text-decoration-none fw-semibold px-20 py-20 border-white-1 d-block <?php echo (str_contains($page,'course.php'))? 'active':'' ;?>">
+                <a href="course.html" class="text-decoration-none fw-semibold px-20 py-20 border-white-1 d-block active">
                     <div class="d-flex align-items-center">
                         
                         <img src="assets/images/school.svg" width="24px" alt="direct" />
@@ -116,7 +116,7 @@
                     </div>
                     <div class="menu-tabs" id="menu-tab-school">
                         <div class="w-100">
-                            <form action="../directflight/school-search.php" method="get">
+                            <form action="school-search.html" method="get">
                                 <div class="row">
                                     <div class="col-12 pb-5">
                                         <div class="position-relative effect">
@@ -140,7 +140,7 @@
                                     </div>
                                     <div class="col-6 py-5">
                                         <div class="position-relative effect">
-                                            <input type="date" class="control-search w-100 form-control px-20 py-10 shadow rounded border-0 fs-16" value="<?php echo date("Y-m-d");?>" />
+                                            <input type="date" class="control-search w-100 form-control px-20 py-10 shadow rounded border-0 fs-16" value="2022-11-27" />
                                             <span class="position-absolute top-0 start-0 icon-abso">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#b3b3b3" class="bi bi-calendar-plus" viewBox="0 0 16 16">
                                                     <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
